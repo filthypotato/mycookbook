@@ -1,0 +1,323 @@
+/* General Reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+/* Add some spacing to the page */
+div {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: black;
+    background-color: #101010;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: rgb(88, 45, 228);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+/* Instructions TITLE before organized list of steps */
+.instructions {
+    font-size: 20px;  
+    color: black;
+    text-align: center;
+}
+
+/* Ingredients TITLE below IMG on each recipe webpage */
+.ingredients {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+/* Unorganized list of ingredients */
+.ingredients li {
+    font-weight: bold;
+    color: rgb(129, 24, 182);
+    text-align: center;
+    list-style-type: disc;
+}
+
+/* List of instructions: 1 through ~ */
+.instructions li {
+    text-align: left;
+    
+}
+
+.yumnumfoods h1 {
+    text-align: center;
+    color: aqua;
+    font-family: 'Montserrat';
+    display: block;
+    font-size: 30px;
+}
+
+/* Lesson on Home Page */
+.lesson h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #ef3535;
+    text-align: center;
+}
+
+.lesson-msg p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+
+}
+
+/* Aout me paragraph */
+.about-me p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+/* Title of web page ex: Recipes, About Me, MyCookbook */
+.title-page {
+    text-align: center;
+}
+
+/* Prep-Cook title */
+.prep-cook {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.recipe-container {
+    display: flex; /* Enables side-by-side layout */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Centers the cards */
+    align-items: stretch; /* Ensures all cards have the same height */
+    padding: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 280px; /* Fixed width */
+    height: 350px; /* Fixed height to keep all boxes the same */
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px; /* Make all images the same height */
+    object-fit: cover; /* Prevents distortion */
+}
+
+.recipe-info {
+    flex-grow: 1; /* Ensures content fills available space */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5D3FD3;
+    margin-bottom: 10px;
+}
+
+.recipe-category {
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Keeps text color unchanged */
+    display: block; /* Makes the entire link clickable */
+    height: 100%; /* Ensures it covers the whole card */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a1a8bf;
+    /* background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0), transparent),
+                        url('./images/recipe-page.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ol {
+    font-weight: bold;
+    color: rgb(4, 4, 2);
+    list-style-type: decimal; /* ensures bullet points appear */
+    padding-left: 40px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Automatically centers the image horizontally */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.back-button {
+    margin: 10px 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+
+}
+
+/* Button Container Home, Recipes, About */
+button.styled-button {
+    margin: 10px 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+button.styled-button:hover {
+    background-color: #86e68b;
+}
+
+/* Link Styling */
+button.styled-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Breakfast, Lunch, Dinner buttons */
+button.menu-button {
+    margin: 10px 10px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+button.menu-button:hover {
+    background-color: rgb(190, 132, 142);
+}
+
+
+button.meals-button {
+    background-color: #d371c8; /* Green background */
+    color: black;             /* White text */
+    border: violet;             /* No border */
+    padding: 10px 20px;       /* Padding */
+    text-align: center;       /* Center text */
+    text-decoration: none;    /* Remove underline */
+    display: inline-block;    /* Keep it inline */
+    font-size: 16px;          /* Font size */
+    margin: 4px 2px;          /* Margin */
+    cursor: pointer;          /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover transition */
+    font-weight: bold;
+}
+
+.meals-button:hover {
+    background-color: pink;
+ }
